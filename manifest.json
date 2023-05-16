@@ -1,17 +1,30 @@
 {
-    "manifest_version": 2,
-    "name": "Beastify",
-    "version": "1.0",
+  "manifest_version": 2,
+  "name": "Readable",
+  "version": "1.0",
+  "description": "Makes a website pleasant in the eye",
   
-    "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
-    "homepage_url": "",
-    "icons": {
-      "48": ""
-    },
+  // "homepage_url": "",
   
-    "content_scripts":[
-      {
-        "matches": ["https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/9_VirtualMemory.html"],
-        "js": ["readable.js"]
-      }]
+  "icons": {
+    "48": "icons/readable.png"
+  },
+
+  "content_scripts" : [
+    {
+      "matches":["*://*.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/*"],
+      "js":["readable.js"]
+    }
+  ],
+  
+  // "permissions": [
+  //   "activeTab"
+  // ],
+  
+  "browser_action":{
+    "default_icon": "icons/beast-32.png",
+    "default_title":"Readable",
+    "default_popup": "popup/read_scr.html"
+  }
+
 }

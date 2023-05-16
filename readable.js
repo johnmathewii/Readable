@@ -1,3 +1,10 @@
-document.body.style.border = "5px solid red";
-document.body.style.paddingLeft = "250px";
-document.body.style.paddingRight = "250px";
+document.body.style.paddingLeft = "20";
+document.body.style.paddingRight = "20";
+document.body.style.fontFamily = "Arial";
+document.body.style.fontSize = 22;
+document.body.style.lineHeight = 1.4;
+document.body.style.color = 252525;
+document.body.style.maxWidth = "65%";
+document.body.style.marginLeft = "auto";
+document.body.style.marginRight = "auto";
+document.body.style.backgroundColor = "f8ece3";
